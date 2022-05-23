@@ -1,0 +1,21 @@
+
+<mat-grid-list cols="1">
+    <mat-grid-tile>
+        <button 
+            mat-raised-button 
+            color="primary"
+            (click)="login()"
+        >
+            Iniciar sesión
+        </button>
+
+        <button 
+            mat-raised-button 
+            color="warn"
+            (click)="continueWithoutLogin()"
+        >
+            Continuar sin iniciar sesión
+        </button>
+    </mat-grid-tile>
+</mat-grid-list>
+
