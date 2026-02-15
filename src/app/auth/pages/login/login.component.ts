@@ -16,21 +16,21 @@ export class LoginComponent {
   ) { }
 
   login() {
-    // this.authService.login().subscribe(
-    //   resp => {
-    //     console.log(resp);
+    this.authService.login().subscribe(
+      resp => {
+        console.log(resp);
 
-    //     if (resp.id) {
-    //       this.router.navigate(['./heroes']);
-    //     }
+        if (resp.id) {
+          this.router.navigate(['./heroes']);
+        }
         
-    //   }
-    // )
+      }
+    )
     this.router.navigate(['./heroes']);
   }
 
   continueWithoutLogin() {
-    // this.authService.logout();
+    this.authService.logout();
     this.router.navigate(['./heroes']);
   }
 }
